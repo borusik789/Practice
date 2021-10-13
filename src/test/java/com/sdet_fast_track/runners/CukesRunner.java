@@ -14,6 +14,7 @@ import org.junit.runner.RunWith;
         },
         features = "src/test/resources/features",
         glue = "com/sdet_fast_track/step_definitions",
+        monochrome = true,
         dryRun = false,
         tags = "@wip"
 )

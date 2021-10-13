@@ -1,6 +1,38 @@
 package com.sdet_fast_track.pages;
 
+import com.sdet_fast_track.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class LoginPage {
+
+    public LoginPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
+    }
+
+    @FindBy(id = "inputEmail")
+    public WebElement inputEmail;
+
+    @FindBy(id = "inputPassword")
+    public WebElement inputPassword;
+
+    @FindBy(xpath = "//button[@type='submit']")
+    public WebElement loginButton;
+
+    public void login(){
+        inputEmail.sendKeys("");
+        inputPassword.sendKeys("");
+        loginButton.click();
+    }
+
+    public void loginWithParameters(String username, String password){
+        inputEmail.sendKeys(username);
+        inputPassword.sendKeys(password);
+        loginButton.click();
+    }
+
+
     /**
      * TC#1:
      * Task summary:
