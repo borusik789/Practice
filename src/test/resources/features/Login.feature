@@ -5,14 +5,14 @@ Feature: Library app login
 Background: user is on the login page
   Given user is on the login page
 
-  @wip @student
+   @student
   Scenario: Login as a student
     When student enters username
     And student enters password
     And student clicks login button
     Then student should see dashboard
 
-  @wip @librarian
+   @librarian
     Scenario: Login as Librarian
       When librarian enters username
       And librarian enters password
