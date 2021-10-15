@@ -62,4 +62,29 @@ WikipediaPage wikipediaPage=new WikipediaPage();
         String actualImageText=wikipediaPage.imageText.getText();
         Assert.assertEquals("Image text did not match.",expected,actualImageText);
     }
+
+    @When("User searches {string}")
+    public void user_searches(String expected) {
+        wikipediaPage.searchInput.sendKeys(expected);
+    }
+
+    @Then("User should see {string} on the image text")
+    public void user_should_see_on_the_image_text(String expected) {
+     String actual=wikipediaPage.imageText.getText();
+     Assert.assertEquals(expected,actual);
+    }
+    @Then("User should see {string} on the header text")
+    public void user_should_see_on_the_header_text(String expected) {
+        String actual=wikipediaPage.headerText.getText();
+        Assert.assertEquals(expected,actual);
+    }
+    @Then("User should see {string} on the title text")
+    public void user_should_see_on_the_title_text(String expected) {
+        String actual=Driver.getDriver().getTitle();
+        Assert.assertTrue("Title did not match.",actual.contains(expected));
+    }
+
+
+
+
 }

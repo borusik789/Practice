@@ -1,6 +1,28 @@
 package com.sdet_fast_track.pages;
 
+import com.sdet_fast_track.utilities.Driver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+
 public class DataTableLibrary {
+
+    public DataTableLibrary(){
+        PageFactory.initElements(Driver.getDriver(),this);
+    }
+
+    @FindBy(id = "ctl00_MainContent_username")
+    public WebElement inputUsername;
+
+    @FindBy(id = "ctl00_MainContent_password")
+    public WebElement inputPassword;
+
+    @FindBy(id = "ctl00_MainContent_login_button")
+    public WebElement loginButton;
+
+    @FindBy(id = "month")
+    public WebElement monthSelector;
+
 
     /**
      * http://secure.smartbearsoftware.com/samples/testcomplete12/WebOrders/login.aspx
