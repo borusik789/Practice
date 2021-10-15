@@ -44,4 +44,22 @@ WikipediaPage wikipediaPage=new WikipediaPage();
 
         Assert.assertEquals("Image text did not match.",expectedImageText,actualImageText);
     }
+
+    @When("user searches for {string}")
+    public void user_searches_for(String expected) {
+        wikipediaPage.searchInput.sendKeys(expected);//Steve Jobs
+    }
+
+
+    @Then("user should see {string} on the main header")
+    public void user_should_see_on_the_main_header(String expected) {
+        String actualHeader=wikipediaPage.headerText.getText();
+        Assert.assertEquals("Header Text did not match.",expected,actualHeader);
+    }
+
+    @Then("user should see {string} on the image")
+    public void user_should_see_on_the_image(String expected) {
+        String actualImageText=wikipediaPage.imageText.getText();
+        Assert.assertEquals("Image text did not match.",expected,actualImageText);
+    }
 }

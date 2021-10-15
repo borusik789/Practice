@@ -7,9 +7,10 @@ import org.openqa.selenium.support.PageFactory;
 
 public class WikipediaPage {
 
-    public WikipediaPage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public WikipediaPage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
+
     @FindBy(xpath = "//input[@id='searchInput']")
     public WebElement searchInput;
 

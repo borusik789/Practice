@@ -78,6 +78,11 @@ public class BrowserUtils {
         return elemTexts;
     }
 
+    public static List<String> getElementsTextSteam(List<WebElement> list) {
+       List<String> listString=list.stream().map(WebElement::getText).collect(Collectors.toList());
+        return listString;
+    }
+
     public static List<String> getElementsText(By locator) {
         List<WebElement> elems = Driver.getDriver().findElements(locator);
         List<String> elemTexts = new ArrayList<>();
