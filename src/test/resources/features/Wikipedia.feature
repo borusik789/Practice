@@ -20,15 +20,15 @@ Feature: Wikipedia Search Feature
 
   Scenario: Wikipedia Search header verification
     Given user is on the wikipedia main page
-    When user searches for "Elon Musk"
+    When user searches for "Steve Jobs"
     And user clicks search button
-    Then user should see "Elon Musk" on the main header
+    Then user should see "Steve Jobs" on the main header
 
   Scenario: Wikipedia Search image verification
     Given user is on the wikipedia main page
-    When user searches for "Elon Musk"
+    When user searches for "Steve Jobs"
     And user clicks search button
-    Then user should see "Elon Musk" on the image
+    Then user should see "Steve Jobs" on the image
   @wip
   Scenario Outline: Wekipedia Search
     Given user is on the wikipedia main page

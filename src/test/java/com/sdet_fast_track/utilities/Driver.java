@@ -14,7 +14,7 @@ public class Driver {
 
     private static ThreadLocal<WebDriver> driverPool = new ThreadLocal<>() ;
 
-    public static WebDriver getDriver() {
+    public static  WebDriver getDriver() {
 
         if (driverPool.get() == null) {
 

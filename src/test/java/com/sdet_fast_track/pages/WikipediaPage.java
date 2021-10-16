@@ -20,7 +20,7 @@ public class WikipediaPage {
     @FindBy(xpath = "//h1[@id='firstHeading']")
     public WebElement headerText;
 
-    @FindBy(xpath = "(//th[@class='infobox-above'])[1]")
+    @FindBy(xpath = "//th[contains(@class,'infobox-above')]")
     public WebElement imageText;
     /**
      * TC#25: Wikipedia Search Functionality Title Verification

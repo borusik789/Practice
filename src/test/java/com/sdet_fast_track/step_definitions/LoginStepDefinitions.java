@@ -52,7 +52,7 @@ public class LoginStepDefinitions {
 
     @When("librarian enters password")
     public void librarian_enters_password() {
-        loginPage.inputPassword.sendKeys(ConfigurationReader.getProperty("libraryPassword"));
+        loginPage.inputPassword.sendKeys(System.getProperty("provpassword"));
     }
 
     @When("librarian clicks login button")
