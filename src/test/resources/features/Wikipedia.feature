@@ -30,7 +30,7 @@ Feature: Wikipedia Search Feature
     And user clicks search button
     Then user should see "Steve Jobs" on the image
   @wip
-  Scenario Outline: Wekipedia Search
+  Scenario Outline: Wikipedia Search
     Given user is on the wikipedia main page
     When User searches "<keyword>"
     And user clicks search button
