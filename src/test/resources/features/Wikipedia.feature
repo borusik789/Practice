@@ -11,7 +11,7 @@ Feature: Wikipedia Search Feature
     When user searches for Steve Jobs
     And user clicks search button
     Then user should see Steve Jobs on the main header
-
+  @wip
   Scenario: Wikipedia Search image verification
     Given user is on the wikipedia main page
     When user searches for Steve Jobs
@@ -23,13 +23,13 @@ Feature: Wikipedia Search Feature
     When user searches for "Steve Jobs"
     And user clicks search button
     Then user should see "Steve Jobs" on the main header
-
+  @wip
   Scenario: Wikipedia Search image verification
     Given user is on the wikipedia main page
     When user searches for "Steve Jobs"
     And user clicks search button
     Then user should see "Steve Jobs" on the image
-  @wip
+
   Scenario Outline: Wikipedia Search
     Given user is on the wikipedia main page
     When User searches "<keyword>"
