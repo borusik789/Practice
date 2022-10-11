@@ -1,7 +1,7 @@
-package com.sdet_fast_track.step_definitions;
+package com.practice.step_definitions;
 
-import com.sdet_fast_track.pages.EtsyPage;
-import com.sdet_fast_track.utilities.Driver;
+import com.practice.pages.EtsyPage;
+import com.practice.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

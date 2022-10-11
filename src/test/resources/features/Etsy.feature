@@ -1,3 +1,4 @@
+@ts
 Feature: Etsy title verification
 
   Background: user is on the etsy main page

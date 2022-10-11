@@ -1,8 +1,8 @@
-package com.sdet_fast_track.step_definitions;
+package com.practice.step_definitions;
 
-import com.sdet_fast_track.pages.DataTableLibrary;
-import com.sdet_fast_track.utilities.ConfigurationReader;
-import com.sdet_fast_track.utilities.Driver;
+import com.practice.pages.DataTableLibrary;
+import com.practice.utilities.ConfigurationReader;
+import com.practice.utilities.Driver;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;

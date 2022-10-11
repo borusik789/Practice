@@ -1,4 +1,4 @@
-package com.sdet_fast_track.utilities;
+package com.practice.utilities;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.openqa.selenium.WebDriver;

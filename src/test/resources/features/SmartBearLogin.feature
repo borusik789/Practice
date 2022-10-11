@@ -1,6 +1,6 @@
 Feature: Smart Bear Login Test
 
-
+@st
   Scenario: Login Smart bear
     Given User is on the login page of SmartBear
     When User enters below info

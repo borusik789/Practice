@@ -1,6 +1,6 @@
-package com.sdet_fast_track.pages;
+package com.practice.pages;
 
-import com.sdet_fast_track.utilities.Driver;
+import com.practice.utilities.Driver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.PageFactory;
